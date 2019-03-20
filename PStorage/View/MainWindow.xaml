@@ -1,0 +1,142 @@
+﻿<Window x:Class="PStorage.View.MainWindow"
+        WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PStorage"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="370" Height="481.5" MinWidth="120" Width="400" Background="{x:Null}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="155*" MinWidth="155"/>
+            <ColumnDefinition Width="237*" MinWidth="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" MinHeight="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30" MinHeight="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Margin="5,0,0,0">
+            <Button Content="Наименование" MinHeight="26" MaxHeight="26" MinWidth="120" MaxWidth="120" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="#FF2C4974">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.693,0.948" StartPoint="-0.165,-0.873">
+                        <GradientStop Color="#FF060408"/>
+                        <GradientStop Color="#FF9B9CAA" Offset="0.885"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="+" Margin="5,0,0,0" FontSize="11" Height="15" Width="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="#FF232222">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF3CB93C" Offset="0.461"/>
+                        <GradientStop Color="#FF724343" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <Grid Grid.Row="1" Margin="5,5,0,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <DataGrid Grid.Row="0" x:Name="gridNames">
+                <DataGrid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF19505D"/>
+                        <GradientStop Color="White" Offset="0.931"/>
+                    </LinearGradientBrush>
+                </DataGrid.Background>
+            </DataGrid>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2" Margin="5,0,0,0">
+            <Button Content="Комплектация" MinHeight="26" MaxHeight="26" MinWidth="120" MaxWidth="120" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="#FF2C4974">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.693,0.948" StartPoint="-0.165,-0.873">
+                        <GradientStop Color="#FF060408"/>
+                        <GradientStop Color="#FF9B9CAA" Offset="0.885"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="+" Margin="5,0,0,0" FontSize="11" Height="15" Width="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="#FF232222">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF3CB93C" Offset="0.461"/>
+                        <GradientStop Color="#FF724343" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <Grid Grid.Row="3" Margin="5,5,0,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <DataGrid Grid.Row="1" x:Name="gridNames5">
+                <DataGrid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF19505D"/>
+                        <GradientStop Color="White" Offset="0.931"/>
+                    </LinearGradientBrush>
+                </DataGrid.Background>
+            </DataGrid>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="5,0,0,0">
+            <Button Content="Остаток" MinHeight="26" MaxHeight="26" MinWidth="90" MaxWidth="120" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="#FF2C4974">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.693,0.948" StartPoint="-0.165,-0.873">
+                        <GradientStop Color="#FF060408"/>
+                        <GradientStop Color="#FF9B9CAA" Offset="0.885"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="+" Margin="5,0,0,0" FontSize="11" Height="15" Width="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="#FF232222">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF3CB93C" Offset="0.461"/>
+                        <GradientStop Color="#FF724343" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Резерв" Margin="10,0,0,0" MinHeight="26" MaxHeight="26" MinWidth="90" MaxWidth="120" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="#FF2C4974">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.693,0.948" StartPoint="-0.165,-0.873">
+                        <GradientStop Color="#FF060408"/>
+                        <GradientStop Color="#FF9B9CAA" Offset="0.885"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.Column="1" Margin="5,5,5,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <DataGrid Grid.Row="0" x:Name="gridNames2">
+                <DataGrid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF19505D"/>
+                        <GradientStop Color="White" Offset="0.931"/>
+                    </LinearGradientBrush>
+                </DataGrid.Background>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1" Margin="5,5,5,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <DataGrid Grid.Row="0" x:Name="gridNames7">
+                <DataGrid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF19505D"/>
+                        <GradientStop Color="White" Offset="0.931"/>
+                    </LinearGradientBrush>
+                </DataGrid.Background>
+            </DataGrid>
+        </Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.807,0.673" StartPoint="0.395,0.313">
+                <GradientStop Color="#FF9E75B9"/>
+                <GradientStop Color="#FF302E4B" Offset="0.942"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+    </Grid>
+</Window>
